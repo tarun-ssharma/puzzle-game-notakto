@@ -1,0 +1,179 @@
+* {
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-family: OCR A Std, monospace;
+}
+
+.homescreen {
+	position: absolute;
+	display: block;
+	top: 0px;
+	z-index: 3;
+	border: 5px solid black;
+	margin-right: auto;
+	margin-left: auto;
+	width: 600px;
+	height: 600px;
+	right: calc(50% - 300px);
+	text-align: center;
+}
+
+.hide {
+	display: none !important;
+	margin-right: auto;
+	margin-left: auto;
+	right: calc(50% - 300px);
+}
+
+canvas {
+	position: absolute;
+	display: block;
+	top: 0px;
+	z-index: 2;
+	border: 5px solid black;
+	margin-right: auto;
+	margin-left: auto;
+	left: calc(50% - 300px);
+	text-align: center;
+}
+.add-border{
+	border: 2px solid red;
+}
+.ai,.frnd {
+	color: black;
+	display: inline-block;
+	width: 23%;
+	text-align: center;
+}
+.turnFirst, .turnSecond {
+	color: black;
+	display: inline-block;
+	width: 23%;
+	text-align: center;
+}
+.numBoardsOne, .numBoardsTwo, .numBoardsThree {
+	color: black;
+	display: inline-block;
+	width: 15%;
+	text-align: center;
+}
+
+.play {
+	width: 25%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	cursor: pointer;
+	background: red;
+	border: 2px solid black;
+	font-size: 20px;
+  	box-shadow: black 5px 5px;
+}
+
+a{
+	text-decoration: none;
+	color: red;
+}
+
+.one {
+	display: block;
+}
+
+.selected {
+	background-color: "black";
+	color: "white";
+	box-shadow: 5px 5px;
+}
+
+#gameover {
+    display: none;
+    background: rgba(22,22,22 , 0.5);
+    position: absolute;
+    top: 0;
+    left: calc(50% - 300px);
+    border: 5px solid black;
+    position: absolute;
+    z-index: 3;
+}
+
+#youwon {
+    width: 120px;
+    position: absolute;
+    top : 240px;
+    left : calc(50% - 60px);
+    display: none;
+
+}
+
+#youlose {
+    display: none;
+    position: absolute;
+    left : 0px;
+}
+
+#whoWon {
+  text-align: center;
+  width: 400px;
+  position: absolute;
+  top : 75px;
+  left : 100px;
+  display: none;
+  color: black;
+  font-weight: bold;
+  font-size: 40px;
+  color: black;
+  box-shadow: 5px 5px black;
+  background: rgba(122,122,22);
+}
+
+#restart {
+  text-align: center;
+  width: 120px;
+  position: absolute;
+  top : 425px;
+  left : calc(50% - 60px);
+  display: none;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  background:red;
+  border: 2px solid black;
+  box-shadow: black 5px 5px;
+}
+
+.player {
+	border-top: 0;
+	border-right: 0;
+	border-left: 0;
+	border-bottom: 3px solid red;
+}
+
+.player:focus {
+	outline: none;
+	background: rgb(125, 255 , 0);
+}
+
+.instr{
+	font-size: 12px;
+	text-align: left;
+	padding: 10px;
+	position: absolute;
+	bottom: 0px;
+}
+
+.instr h4{
+	text-align: center;
+	text-decoration: underline;
+}
+
+#error {
+	font-size: 8px;
+}
+
+h2 {
+	margin: 10px;
+}

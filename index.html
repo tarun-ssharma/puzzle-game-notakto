@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>Notakto</title>
+		<link rel="stylesheet" href="index.css"/>
+	</head>
+	<body>
+		<div class="homescreenContainer">
+			<div class="homescreen">
+				<h1>&#9812;Notakto&#9812;</h1>
+				<h2>Hi, <input class="player" id="player1"></input>!</h2>
+				<h2>&#9830;Play v/s&#9830;</h2>
+				<div class="ai add-border">AI</div>
+				<div class="frnd add-border">Friend</div>
+				<p id="opponentName">...</p>
+				<h2>&#9830;Pick your turn&#9830;</h2>
+				<div class="turnFirst add-border">First</div>
+				<div class="turnSecond add-border">Second</div>
+				<h2>&#9830;Number of Boards&#9830;</h2>
+				<div class="numBoardsOne add-border">1</div>
+				<div class="numBoardsTwo add-border">2</div>
+				<div class="numBoardsThree add-border">3</div>
+				<p id="error"></p>
+				<div class="play add-border">Play!</div>
+				<div class="instr">
+				<h4>Instructions</h4>
+				<p><a href="https://en.wikipedia.org/wiki/Notakto" target="_blank">Notakto</a> is played on a finite number of empty three-by-three boards. Each player takes turns placing an X on the board(s) in a vacant space. If a board has a three-in-a-row, the board is dead and it cannot be played on any more. When one player makes a three-in-a-row and there are no more boards to play on, that player loses.</p>
+				</div>
+			</div>
+		</div>
+		<div id="gameover" width="600px" height="600px">
+			<p id="whoWon"></p>
+	        <img src="https://raw.githubusercontent.com/CodeExplainedRepo/2D-Breakout-Game-JavaScript/master/2D%20Breakout%20Game%20JavaScript%20-%20FULL%20GAME/img/youwon.png" alt="" id="youwon">
+	        <img src="https://raw.githubusercontent.com/CodeExplainedRepo/2D-Breakout-Game-JavaScript/master/2D%20Breakout%20Game%20JavaScript%20-%20FULL%20GAME/img/gameover.png" alt="" id="youlose">
+        <div id="restart" onclick="restartGame()">Play Again!</div>
+    	</div>
+		<canvas id="game" class="hide" width="600px" height="600px">
+		</canvas>
+		<script type="module" src="./gameScreen.js"></script>
+		<script type="module" src="./homeScreen.js"></script>
+	</body>
+</html>
